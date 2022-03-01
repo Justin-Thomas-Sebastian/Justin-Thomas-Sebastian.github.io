@@ -1,5 +1,7 @@
-function animateAvatar(){
+function animateCharacter(character){
     context.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
-    avatar.updateLocation();
-    requestAnimationFrame(animateAvatar); 
+    character.updateLocation();
+    requestAnimationFrame(() => {
+        animateCharacter(character);
+    }); 
 }

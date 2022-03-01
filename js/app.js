@@ -1,2 +1,2 @@
 const avatar = new Avatar();
-animateAvatar();
+animateCharacter(avatar);
