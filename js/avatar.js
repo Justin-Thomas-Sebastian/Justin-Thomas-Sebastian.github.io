@@ -24,6 +24,8 @@ class Avatar {
     updateLocation(){
         this.renderAvatar();
         this.position.y += this.velocity.y;
+        this.position.x += this.velocity.x;
+        
         let feet_hitbox = this.position.y + this.height + this.velocity.y;
         if(feet_hitbox <= gameCanvas.height){
             this.velocity.y += GRAVITY;
