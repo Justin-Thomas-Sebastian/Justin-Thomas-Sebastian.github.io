@@ -2,11 +2,13 @@
 document.addEventListener("keydown", (e) => {
     const keyCode = e.code;
     switch(keyCode){
+        case "ArrowLeft":
         case "KeyA":
-            avatar.velocity.x = -5;
+            movementKeys.left.pressed = true;
             break;
+        case "ArrowRight":
         case "KeyD":
-            avatar.velocity.x = 5;
+            movementKeys.right.pressed = true;
             break;
         case "KeyS":
             // crouch? undecided
@@ -20,11 +22,13 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     const keyCode = e.code;
     switch(keyCode){
+        case "ArrowLeft":
         case "KeyA":
-            avatar.velocity.x = 0;
+            movementKeys.left.pressed = false;
             break;
+        case "ArrowRight":
         case "KeyD":
-            avatar.velocity.x = 0;
+            movementKeys.right.pressed = false;
             break;
         case "KeyS":
             break;
