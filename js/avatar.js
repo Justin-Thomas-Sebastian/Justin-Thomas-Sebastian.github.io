@@ -3,8 +3,8 @@ class Avatar {
         this.width = 50;
         this.height = 110;
         this.position = {
-            x: innerWidth / 2,
-            y: 30
+            x: 200,
+            y: 0
         }
         this.velocity = {
             x: 0,

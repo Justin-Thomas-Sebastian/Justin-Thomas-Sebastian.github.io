@@ -1,2 +1,3 @@
 const avatar = new Avatar();
-animateCharacter(avatar);
+const bgImage = new Background(backgroundImage);
+animateCharacter(avatar, bgImage);
