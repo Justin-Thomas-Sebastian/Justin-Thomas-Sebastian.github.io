@@ -14,12 +14,12 @@ function animateCharacter(character, bgImage){
     character.updateLocation();
 
     // move character
-    if(movementKeys.right.pressed && character.position.x <= gameCanvas.width - character.width){
+    if(movementKeys.right.pressed && character.position.x <= gameCanvas.width - character.width - 100){
         character.velocity.x = 10;
         xOffSet++;
         console.log("char position:" + character.position.x);
         console.log("xOffSet:" + xOffSet);
-    } else if (movementKeys.left.pressed && character.position.x >= 0){
+    } else if (movementKeys.left.pressed && character.position.x >= 0 + 100){
         character.velocity.x = -10;
         xOffSet--;
         console.log("char position:" + character.position.x);
@@ -30,13 +30,14 @@ function animateCharacter(character, bgImage){
     
     // scroll background
     if(movementKeys.right.pressed && 
-        character.position.x >= gameCanvas.width - character.width &&
-        xOffSet <= 275){
+        character.position.x >= gameCanvas.width - character.width - 100 &&
+        xOffSet <= 265){
         xOffSet++;
         bgImage.position.x -= 10;
+        console.log(gameCanvas.width)
         console.log("xOffSet:" + xOffSet);
         console.log("move bg image right");
-    } else if (movementKeys.left.pressed && character.position.x <= 0 && bgImage.position.x < 0){
+    } else if (movementKeys.left.pressed && character.position.x <= 0  + 100 && bgImage.position.x < 0){
         xOffSet--;
         bgImage.position.x += 10;
         console.log("xOffSet:" + xOffSet);
