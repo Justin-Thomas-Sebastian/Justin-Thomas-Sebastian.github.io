@@ -19,6 +19,7 @@ class Avatar {
             this.width,
             this.height
         )
+        context.fillStyle = "red";
     }
 
     updateLocation(){
