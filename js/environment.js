@@ -4,7 +4,7 @@ const GRAVITY = 2;
 gameCanvas.width = innerWidth;
 gameCanvas.height = 527;
 const backgroundImage = new Image();
-backgroundImage.src = "../assets/bedroom_walls.png"
+backgroundImage.src = "../assets/bedroom_3d.png"
 
 class Background {
     constructor(image) {

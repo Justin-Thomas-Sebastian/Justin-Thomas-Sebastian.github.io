@@ -8,7 +8,7 @@ const movementKeys = {
 }
 
 let xOffSet = 0;
-const xOffSetMax = 265;
+const xOffSetMax = 263;
 const wallSize = 100;
 
 function animateCharacter(character, bgImage){
