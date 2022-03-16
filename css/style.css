@@ -12,15 +12,12 @@ body {
 }
 
 #primary-header{
-    width: 100%;
     height: 100px;
     background-color: #111;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
 
 #primary-header h1 {
     color: white;
@@ -36,4 +33,45 @@ body {
     height: 30px;
     width: 100%;
     background-color: black;
+}
+
+#main-container {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#journey-container {
+    padding: 40px 200px;
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
+}
+
+#journey-container h1 {
+    text-align: center;
+}
+
+.journey-entry {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.placeholder-thumbnail {
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.journey-content {
+    width: 600px;
+}
+
+.journey-content p {
+    margin-top: 10px;
 }
