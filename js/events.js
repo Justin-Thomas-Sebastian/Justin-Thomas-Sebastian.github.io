@@ -40,7 +40,7 @@ document.addEventListener("keyup", (e) => {
 // jump
 document.addEventListener("keypress", (e) => {
     const keyCode = e.code;
-    if(keyCode === "Space" || keyCode === "KeyW"){
+    if(keyCode === "KeyW"){
         let feet_hitbox = avatar.position.y + avatar.height + avatar.velocity.y + 40;
         if(feet_hitbox <= gameCanvas.height){
             avatar.velocity.y += GRAVITY;
