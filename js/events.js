@@ -49,3 +49,9 @@ document.addEventListener("keypress", (e) => {
         }   
     }
 });
+
+// reload page when user resizes window
+// to avoid canvas looking weird
+window.onresize = function(){
+     location.reload(); 
+}
