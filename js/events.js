@@ -2,11 +2,9 @@
 document.addEventListener("keydown", (e) => {
     const keyCode = e.code;
     switch(keyCode){
-        case "ArrowLeft":
         case "KeyA":
             movementKeys.left.pressed = true;
             break;
-        case "ArrowRight":
         case "KeyD":
             movementKeys.right.pressed = true;
             break;
@@ -22,11 +20,9 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     const keyCode = e.code;
     switch(keyCode){
-        case "ArrowLeft":
         case "KeyA":
             movementKeys.left.pressed = false;
             break;
-        case "ArrowRight":
         case "KeyD":
             movementKeys.right.pressed = false;
             break;
