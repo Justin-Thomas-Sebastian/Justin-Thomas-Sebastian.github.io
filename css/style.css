@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
-
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ body {
     font-family: 'Smooch Sans', sans-serif;
 }
 
+/* HEADER */
 #primary-header{
     height: 100px;
     background-color: #111;
@@ -24,6 +25,7 @@ body {
     font-size: 40px;
 }
 
+/* SIDESCROLLER */
 #canvas-container {
     display:flex;
     justify-content: center;
@@ -34,17 +36,18 @@ body {
     background-color: black;
 }
 
+/* MAIN */
 #main-container {
-    padding: 0 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* JOURNEY */
 #journey-container {
-    padding: 40px 200px;
-    border-bottom: 1px solid black;
+    padding: 40px 0;
+    border-bottom: 1px solid lightgray;
     font-size: 1.2em;
 }
 
@@ -67,10 +70,53 @@ body {
     border-radius: 10px;
 }
 
+.journey-title {
+    margin-bottom: 8px;
+}
+
 .journey-content {
     width: 600px;
 }
 
 .journey-content p {
     margin-top: 10px;
+}
+
+/* PROJECTS */
+#projects-container {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+#projects-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-row {
+    display: flex;
+}
+
+.project-entry {
+    margin: 0 10px 30px 10px;
+    width: 250px;
+    border: 1px solid lightgray;
+}
+
+.project-image {
+    height: 150px;
+    width: 248px;
+    background-color: black;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 10px;
+    margin-bottom: 10px;
 }
