@@ -8,8 +8,8 @@ const movementKeys = {
 }
 
 let xOffSet = 0;
-const xOffSetMax = 263;
-const wallSize = 100;
+const xOffSetMax = 254;
+const wallSize = 200;
 
 function animateCharacter(character, bgImage){
     context.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
