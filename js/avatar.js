@@ -5,7 +5,7 @@ class Avatar {
     constructor(image){
         this.position = {
             x: 200,
-            y: 100
+            y: 140
         }
         this.velocity = {
             x: 0,
@@ -13,8 +13,8 @@ class Avatar {
         }
 
         this.image = image;
-        this.width = image.width;
-        this.height = image.height;
+        this.width = 100;
+        this.height = 348;
     }
 
     renderAvatar(){
@@ -28,10 +28,8 @@ class Avatar {
         
         let feet_hitbox = this.position.y + this.height + this.velocity.y + 40;
         if(feet_hitbox <= gameCanvas.height){
-            console.log("falling");
             this.velocity.y += GRAVITY;
         } else {
-            console.log("Hit the floor goddamit.");
             this.velocity.y = 0;
         }
     }

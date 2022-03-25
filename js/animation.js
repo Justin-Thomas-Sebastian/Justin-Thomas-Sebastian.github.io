@@ -8,17 +8,18 @@ const movementKeys = {
 }
 
 let xOffSet = 0;
-const xOffSetMax = 359;
+const xOffSetMax = 357;
 const wallSize = 200;
 
 function animateCharacter(character, bgImage){
+    
     context.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
     bgImage.renderBackground();
     character.updateLocation();
 
     // move character
     if(movementKeys.right.pressed && !movementKeys.left.pressed && 
-       character.position.x <= gameCanvas.width - character.width - wallSize && xOffSet <= xOffSet){
+       character.position.x < gameCanvas.width - character.width - wallSize && xOffSet <= xOffSetMax){
             character.velocity.x = 7;
             xOffSet++;
             console.log("char position:" + character.position.x);

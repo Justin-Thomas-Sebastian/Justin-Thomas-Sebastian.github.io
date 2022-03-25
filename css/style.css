@@ -12,6 +12,16 @@ body {
     font-family: 'Smooch Sans', sans-serif;
 }
 
+/* HERO */
+#hero-header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* SIDESCROLLER */
 #canvas-container {
     display:flex;
