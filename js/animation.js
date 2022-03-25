@@ -8,7 +8,7 @@ const movementKeys = {
 }
 
 let xOffSet = 0;
-const xOffSetMax = 254;
+const xOffSetMax = 359;
 const wallSize = 200;
 
 function animateCharacter(character, bgImage){
@@ -19,13 +19,13 @@ function animateCharacter(character, bgImage){
     // move character
     if(movementKeys.right.pressed && !movementKeys.left.pressed && 
        character.position.x <= gameCanvas.width - character.width - wallSize && xOffSet <= xOffSet){
-            character.velocity.x = 10;
+            character.velocity.x = 7;
             xOffSet++;
             console.log("char position:" + character.position.x);
             console.log("xOffSet:" + xOffSet);
     } else if (movementKeys.left.pressed && !movementKeys.right.pressed && 
         character.position.x >= 0 + wallSize){
-            character.velocity.x = -10;
+            character.velocity.x = -7;
             xOffSet--;
             console.log("char position:" + character.position.x);
             console.log("xOffSet:" + xOffSet);
@@ -37,7 +37,7 @@ function animateCharacter(character, bgImage){
     if(movementKeys.right.pressed && !movementKeys.left.pressed &&
         character.position.x >= gameCanvas.width - character.width - wallSize && xOffSet <= xOffSetMax){
             xOffSet++;
-            bgImage.position.x -= 10;
+            bgImage.position.x -= 7;
             console.log("char position:" + character.position.x);
             console.log("xOffSet:" + xOffSet);
             console.log("move bg image right");
@@ -45,7 +45,7 @@ function animateCharacter(character, bgImage){
         character.position.x <= 0  + wallSize && 
         bgImage.position.x < 0){
             xOffSet--;
-            bgImage.position.x += 10;
+            bgImage.position.x += 7;
             console.log("char position:" + character.position.x);
             console.log("xOffSet:" + xOffSet);
             console.log("bgImage posish: " + bgImage.position.x);

@@ -1,7 +1,8 @@
+const avatarImage = new Image();
+avatarImage.src = "../assets/avatar-image.png";
+
 class Avatar {
-    constructor(){
-        this.width = 70;
-        this.height = 150;
+    constructor(image){
         this.position = {
             x: 200,
             y: 0
@@ -10,16 +11,14 @@ class Avatar {
             x: 0,
             y: 0
         }
+
+        this.image = image;
+        this.width = image.width;
+        this.height = image.height;
     }
 
     renderAvatar(){
-        context.fillRect(
-            this.position.x,
-            this.position.y,
-            this.width,
-            this.height
-        )
-        context.fillStyle = "red";
+        context.drawImage(this.image, this.position.x, this.position.y);  
     }
 
     updateLocation(){
