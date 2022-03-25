@@ -4,25 +4,22 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Smooch Sans', sans-serif;
 }
 
-/* HEADER */
-#primary-header{
-    height: 100px;
+/* HERO */
+#hero-header {
+    height: 100vh;
+    width: 100vw;
     background-color: #111;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-#primary-header h1 {
-    color: white;
-    font-size: 40px;
+    align-items: center;
 }
 
 /* SIDESCROLLER */
@@ -119,4 +116,10 @@ body {
     list-style-type: none;
     padding: 0 10px;
     margin-bottom: 10px;
+}
+
+#avatar-image-test {
+    width: 500px;
+    height: 100px;
+    background-image: url("assets/avatar-image.png");
 }
