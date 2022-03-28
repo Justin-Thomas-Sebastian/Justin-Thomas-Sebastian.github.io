@@ -74,6 +74,7 @@ body {
     padding: 40px 0;
     border-bottom: 1px solid lightgray;
     font-size: 1.2em;
+    display: none;
 }
 
 #journey-container h1 {
