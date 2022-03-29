@@ -8,34 +8,27 @@
     <title>Justin Sebastian | Software Dev</title>
 </head>
 <body>
-
-    <!-- HERO HEADER -->
+    <!-- HEADER -->
     <div id="primary-header">
-        <span class="logo-letter">Justin Sebastian</span>
-        <span class="logo-letter">Software Developer</span>
+        <div id="name-title-container">
+            <span class="header-name">Justin Sebastian</span>
+            <div id="title-separator"></div>
+            <span class="header-title">Software Developer</span>
+        </div>
     </div>
-
+    <!-- 2d Platformer -->
     <div id="canvas-container">
         <canvas id="game-canvas"></canvas>
     </div>
-
-    <div id="sub-header">
-
-    </div>
-
-    <!-- <div id="hero-header">
-        <h1>JS</h1>
-        <div id="canvas-container">
-            <canvas id="game-canvas"></canvas>
-        </div>
-    </div> -->
+    <div id="sub-header"></div>
 
     <!-- MAIN -->
     <main id="main-container">
         <!-- JOURNEY -->
+        <!-- THIS ENTIRE SECTION IS HIDDEN FOR NOW -->
+        <!-- NOT SURE IF I SHOULD INCLUDE IT IN THE FINISHED PRODUCT-->
         <div id="journey-container"> 
             <h1>___My Journey___</h1>
-
             <!-- Codeup -->
             <div class="journey-entry">
                 <div class="journey-thumbnail-container">
@@ -51,7 +44,6 @@
                     <p class="journey-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab, ipsam eius quam libero obcaecati, minima architecto deleniti fugiat eaque</p>
                 </div>
             </div>
-
             <!-- Park University-->
             <div class="journey-entry">
                 <div class="journey-thumbnail-container">
@@ -67,7 +59,6 @@
                     <p class="journey-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab, ipsam eius quam libero obcaecati, minima architecto deleniti fugiat eaque</p>
                 </div>
             </div>
-
             <!-- Prudential -->
             <div class="journey-entry">
                 <div class="journey-thumbnail-container">
@@ -84,7 +75,6 @@
                     </p>
                 </div>
             </div>
-
             <!-- WOS -->
             <div class="journey-entry">
                 <div class="journey-thumbnail-container">
@@ -103,7 +93,6 @@
                     </p>
                 </div>
             </div>
-
             <!-- Army -->
             <div class="journey-entry">
                 <div class="journey-thumbnail-container">
@@ -124,121 +113,73 @@
         <!-- PROJECTS -->
         <div id="projects-container">
             <h1 id="projects-header">___Projects___</h1>
-
+            <!-- PROJECT ROW -->
+            <!-- CURRENT ONLY 1 ROW. WILL ADD IF NECESSARY-->
             <div class="projects-row">
                 <!-- Project 1-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project1</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
+                <div class="project-entry">
+                    <div class ="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project1</h4>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="#">Livesite</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
                     </div>
                 </div>
-
                 <!-- Project 2-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project2</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
+                <div class="project-entry">
+                    <div class ="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project2</h4>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="#">Livesite</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
                     </div>
                 </div>
-
+                <div class="break"></div>
                 <!-- Project 3-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project3</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
+                <div class="project-entry">
+                    <div class ="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project3</h4>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="#">Livesite</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div> 
-
-            <!-- Projects row 2 -->
-            <div class="projects-row">
                 <!-- Project 4-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project4</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
+                <div class="project-entry">
+                    <div class ="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project4</h4>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
                     </div>
-                </div>
-
-                <!-- Project 5-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project5</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="#">Livesite</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
                     </div>
-                </div>
-
-                <!-- Project 6-->
-                <div>
-                    <div class="project-entry">
-                        <div class ="project-image"></div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project6</h4>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit optio molestiae eos aut at libero labore debitis ipsam facere?</p>
-                        </div>
-                        <div class="project-links">
-                            <ul>
-                                <li><a href="#">Livesite</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end projects row 2 -->
-        </div> <!-- end projects container-->
-            
+                </div> 
+            </div> <!-- end projects row-->
+        </div> <!-- end projects container-->   
         <!-- CONTACT -->
         <div id="contact-container">
             <h1>__Connect__</h1>
         </div>
     </main>
-   
     <!-- JS -->
     <script src="js/environment.js"></script>
     <script src="js/avatar.js"></script>
