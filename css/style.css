@@ -15,7 +15,8 @@ body {
 #primary-header {
     height: calc( (100vh - 527px + 4px) / 2);  /* 527 is bg image height*/
     min-height: 120px;
-    background-color: rgb(185, 206, 178);
+    /* background-color: rgb(185, 206, 178); */
+    background-color: rgb(177, 199, 183);
     display: flex;
     align-items: center;
     overflow-y: hidden;
@@ -34,7 +35,7 @@ body {
 #title-separator {
     height: 1px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(58, 58, 58);
 }
 
 .header-name {
@@ -72,11 +73,6 @@ body {
 #sub-header {
     height: calc( (100vh - 527px + 4px) / 2);
     background-color: rgb(29, 29, 29);
-}
-
-#hero-header h1 {
-    align-self: flex-start;
-    font-size: 5em;
 }
 
 /* SIDESCROLLER */
