@@ -1,4 +1,4 @@
-// move left / right
+// keyboard move left / right
 document.addEventListener("keydown", (e) => {
     const keyCode = e.code;
     switch(keyCode){
@@ -16,7 +16,7 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// stop moving left/right
+// keyboard stop moving left/right
 document.addEventListener("keyup", (e) => {
     const keyCode = e.code;
     switch(keyCode){
@@ -31,6 +31,42 @@ document.addEventListener("keyup", (e) => {
         default:
             break;
     }
+});
+
+let leftArrow = document.getElementById("left-arrow");
+let rightArrow = document.getElementById("right-arrow");
+
+// move left/right on touchscreen start
+leftArrow.addEventListener("touchstart", (e) => {
+    movementKeys.left.pressed = true;
+});
+rightArrow.addEventListener("touchstart", (e) => {
+    movementKeys.right.pressed = true;
+});
+
+// move left/right on mouse down
+leftArrow.addEventListener("mousedown", (e) => {
+    movementKeys.left.pressed = true;
+});
+rightArrow.addEventListener("mousedown", (e) => {
+    movementKeys.right.pressed = true;
+});
+
+// stop moving on touch end
+rightArrow.addEventListener("touchend", (e) => {
+    movementKeys.right.pressed = false;
+});
+
+leftArrow.addEventListener("touchend", (e) => {
+    movementKeys.left.pressed = false;
+});
+
+// stop moving on mouse up
+leftArrow.addEventListener("mouseup", (e) => {
+    movementKeys.left.pressed = false;
+});
+rightArrow.addEventListener("mouseup", (e) => {
+    movementKeys.right.pressed = false;
 });
 
 // jump

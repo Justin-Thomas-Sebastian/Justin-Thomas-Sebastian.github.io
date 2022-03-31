@@ -79,6 +79,7 @@ body {
 #canvas-container {
     display:flex;
     justify-content: center;
+    position: relative;
 }
 
 #game-canvas-bottom-separator {
@@ -196,4 +197,41 @@ body {
     width: 500px;
     height: 100px;
     background-image: url("assets/avatar-image.png");
+}
+
+/* mobile arrows test */
+.arrows {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    display: none;
+}
+
+.arrows:hover {
+    cursor: pointer;
+}
+
+#canvas-container:hover > .arrows {
+    display:block;
+}
+
+/* always show arrows on smaller devices */
+@media only screen and (max-width: 768px){
+    .arrows {
+        display:block;
+    }
+}
+
+#left-arrow {
+    background-image: url(/assets/left-arrow.png);
+    top: 50%;
+    left: 0;
+    margin-left: 10px;
+}
+
+#right-arrow {
+    background-image: url(/assets/right-arrow.png);
+    top: 50%;
+    right: 0;
+    margin-right: 10px;
 }
