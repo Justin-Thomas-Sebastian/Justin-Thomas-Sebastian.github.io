@@ -10,13 +10,16 @@
 
 body {
     font-family: 'Smooch Sans', sans-serif;
+    background-color: rgb(29, 29, 29);
 }
 
 #primary-header {
     height: calc( (100vh - 527px + 4px) / 2);  /* 527 is bg image height*/
     min-height: 120px;
     /* background-color: rgb(185, 206, 178); */
-    background-color: rgb(177, 199, 183);
+    /* background-color: rgb(177, 199, 183); */
+    background-color: rgb(29, 29, 29);
+    color: lightgray;
     display: flex;
     align-items: center;
     overflow-y: hidden;
@@ -35,7 +38,7 @@ body {
 #title-separator {
     height: 1px;
     width: 100%;
-    border: 1px solid rgb(58, 58, 58);
+    border: 1px solid lightslategray;
 }
 
 .header-name {
@@ -93,6 +96,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 /* JOURNEY */
@@ -138,6 +142,7 @@ body {
 #projects-container {
     margin-top: 30px;
     font-size: 1.2em;
+    background-color: white;
 }
 
 #projects-header {
@@ -234,4 +239,11 @@ body {
     top: 50%;
     right: 0;
     margin-right: 10px;
+}
+
+/* adjust arrow placement on very small devices */
+@media only screen and (max-width: 400px){
+    #left-arrow, #right-arrow {
+        top: 20%;  
+    }
 }
