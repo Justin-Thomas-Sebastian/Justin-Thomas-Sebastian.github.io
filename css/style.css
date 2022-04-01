@@ -198,12 +198,6 @@ body {
     margin-bottom: 10px;
 }
 
-#avatar-image-test {
-    width: 500px;
-    height: 100px;
-    background-image: url("assets/avatar-image.png");
-}
-
 /* mobile arrows test */
 .arrows {
     height: 60px;
@@ -228,14 +222,14 @@ body {
 }
 
 #left-arrow {
-    background-image: url(/assets/left-arrow.png);
+    background-image: url("../assets/left-arrow.png");
     top: 50%;
     left: 0;
     margin-left: 10px;
 }
 
 #right-arrow {
-    background-image: url(/assets/right-arrow.png);
+    background-image: url("../assets/right-arrow.png");
     top: 50%;
     right: 0;
     margin-right: 10px;

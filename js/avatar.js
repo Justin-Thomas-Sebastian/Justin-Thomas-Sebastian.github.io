@@ -1,5 +1,5 @@
 const avatarImage = new Image();
-avatarImage.src = "../assets/avatar-image.png";
+avatarImage.src = "assets/avatar-image.png";
 
 class Avatar {
     constructor(image){
