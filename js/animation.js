@@ -22,9 +22,9 @@ no matter what screen size the user is on.
 */ 
 
 let xOffSet = 0;
-const xOffSetMax = 228; // bg image will stop scrolling to the left when this is reached (max right bounds)
+const xOffSetMax = 293; // bg image will stop scrolling to the left when this is reached (max right bounds)
 const wallSize = 200;   // left/right bounds for the character. once reached, bg image will start scrolling
-const leftBuffer = -4;  // eliminate whitespace at the left edge when fully scrolled
+const leftBuffer = -2;  // eliminate whitespace at the left edge when fully scrolled
 const movespeedLeft = -7;
 const movespeedRight = 7;
 

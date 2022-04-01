@@ -9,7 +9,7 @@ backgroundImage.src = "../assets/marla-bg.png"
 class Background {
     constructor(image) {
         this.position = {
-            x: -900,
+            x: -450,
             y: 0
         }
         this.image = image;
