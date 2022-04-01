@@ -23,6 +23,7 @@ no matter what screen size the user is on.
 
 let xOffSet = 0;
 const xOffSetMax = 293; // bg image will stop scrolling to the left when this is reached (max right bounds)
+const xOffSetMin = -64;
 const wallSize = 200;   // left/right bounds for the character. once reached, bg image will start scrolling
 const leftBuffer = -2;  // eliminate whitespace at the left edge when fully scrolled
 const movespeedLeft = -7;
@@ -60,6 +61,7 @@ function animateCharacter(character, bgImage){
             console.log("char position:" + character.position.x);
             console.log("xOffSet:" + xOffSet);
             console.log("move bg image right");
+            console.log("current bg posish: " + bgImage.position.x);
     } else if (movementKeys.left.pressed && !movementKeys.right.pressed &&
         character.position.x <= 0  + wallSize && 
         bgImage.position.x < leftBuffer){
@@ -73,6 +75,22 @@ function animateCharacter(character, bgImage){
     // stop movement if both left and right keys are pressed simultaneously
     if(movementKeys.right.pressed && movementKeys.left.pressed){
         character.velocity.x = 0;
+    }
+
+    // hide L arrow when max left bounds reached
+    if(xOffSet <= xOffSetMin){
+        document.getElementById("left-arrow").style.display = "none";
+        movementKeys.left.pressed = false;
+    } else {
+        document.getElementById("left-arrow").style.display = "block";
+    }
+
+    // hide R arrow when max right bounds reached
+    if(xOffSet >= xOffSetMax){
+        document.getElementById("right-arrow").style.display = "none";
+        movementKeys.right.pressed = false;
+    } else {
+        document.getElementById("right-arrow").style.display = "block";
     }
 
     requestAnimationFrame(() => {
