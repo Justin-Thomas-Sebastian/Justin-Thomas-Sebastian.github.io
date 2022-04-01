@@ -229,6 +229,5 @@ body {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */    
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
+    -webkit-touch-callout: none; 
 }
