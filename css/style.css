@@ -214,11 +214,11 @@ body {
     display:block;
 }
 
-/* always show arrows on smaller devices */
+/* show arrows on smaller devices by default */
 @media only screen and (max-width: 768px), 
             screen and (max-height: 500px) {
                 
-    .arrows {
+    #left-arrow, #right-arrow {
         display:block;
     }
 }
