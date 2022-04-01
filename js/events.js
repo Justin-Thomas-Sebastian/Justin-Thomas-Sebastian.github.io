@@ -88,8 +88,13 @@ const isMobile = ('ontouchstart' in document.documentElement && navigator.userAg
 
 // reload page when user resizes window, to avoid canvas looking weird
 // unless on mobile
+// window.onresize = function(){
+//     if(!isMobile){
+//         location.reload(); 
+//     }
+// }
+
+// disable mobile check to test something real quick
 window.onresize = function(){
-    if(!isMobile){
-        location.reload(); 
-    }
+    location.reload(); 
 }
