@@ -82,8 +82,14 @@ document.addEventListener("keypress", (e) => {
     }
 });
 
-// reload page when user resizes window
-// to avoid canvas looking weird
+
+// check if mobile device
+const isMobile = ('ontouchstart' in document.documentElement && navigator.userAgent.match(/Mobi/));
+
+// reload page when user resizes window, to avoid canvas looking weird
+// unless on mobile
 window.onresize = function(){
-     location.reload(); 
+    if(!isMobile){
+        location.reload(); 
+    }
 }
