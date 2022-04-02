@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
+:root {
+    --dark: rgb(20, 20, 20);
+}
+
 /* GLOBAL */
 * {
     margin: 0;
@@ -9,8 +13,10 @@
 }
 
 body {
+    /* font-family: 'Abel', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Smooch Sans', sans-serif;
-    background-color: rgb(29, 29, 29);
+    background-color: var(--dark)
 }
 
 #primary-header {
@@ -18,7 +24,7 @@ body {
     min-height: 120px;
     /* background-color: rgb(185, 206, 178); */
     /* background-color: rgb(177, 199, 183); */
-    background-color: rgb(29, 29, 29);
+    background-color: var(--dark);
     color: lightgray;
     display: flex;
     align-items: center;
@@ -75,7 +81,7 @@ body {
 
 #sub-header {
     height: calc( (100vh - 527px + 4px) / 2);
-    background-color: rgb(29, 29, 29);
+    background-color: var(--dark);
 }
 
 /* SIDESCROLLER */
