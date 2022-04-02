@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
 :root {
-    --dark: rgb(20, 20, 20);
+    --dark: rgb(25, 25, 25);
 }
 
 /* GLOBAL */
@@ -20,7 +20,8 @@ body {
 }
 
 #primary-header {
-    height: calc( (100vh - 527px + 4px) / 2);  /* 527 is bg image height*/
+    height: calc((100vh - 527px + 4px) / 2);
+    /* 527 is bg image height*/
     min-height: 120px;
     /* background-color: rgb(185, 206, 178); */
     /* background-color: rgb(177, 199, 183); */
@@ -35,7 +36,7 @@ body {
 }
 
 #name-title-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -80,13 +81,13 @@ body {
 }
 
 #sub-header {
-    height: calc( (100vh - 527px + 4px) / 2);
+    height: calc((100vh - 527px + 4px) / 2);
     background-color: var(--dark);
 }
 
 /* SIDESCROLLER */
 #canvas-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     position: relative;
 }
@@ -102,7 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(253, 253, 253);
 }
 
 /* JOURNEY */
@@ -146,39 +147,81 @@ body {
 
 /* PROJECTS */
 #projects-container {
-    margin-top: 30px;
+    margin-top: 80px;
     font-size: 1.2em;
-    background-color: white;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #projects-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .projects-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .project-entry {
     margin: 0 10px 30px 10px;
-    width: 250px;
+    min-height: 520px;
+    width: 350px;
     border: 1px solid lightgray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(251, 251, 251);
+}
+
+.img-container {
+    background-color: black;
+    width: 350px;
+    height: 290px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    width: 350px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.project-video {
+    display: none;
+    background-color: black;
+    height: 290px;
+    width: 350px;
+}
+
+.project-entry:hover > .project-video,
+.project-entry:focus > .project-video {
+    display: block;
+}
+
+.project-entry:hover > .img-container,
+.project-entry:focus > .img-container {
+    display: none;
 }
 
 /* forces wrap after 2 project entries */
 /* this should only be used on smaller screens */
-.break {  
+.break {
     flex-basis: 100%;
     height: 0;
     display: none;
 }
 
-@media only screen and (max-width: 900px){
-    .break {  
+@media only screen and (max-width: 900px) {
+    .break {
         flex-basis: 100%;
         height: 0;
         width: 0;
@@ -186,22 +229,23 @@ body {
     }
 }
 
-.project-image {
-    height: 150px;
-    width: 248px;
-    background-color: black;
+.project-info {
+    padding: 0 15px 15px 15px;
 }
 
-.project-info {
-    padding: 15px;
+.project-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    padding: 0 10px 10px 10px;
 }
 
 .project-links ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding: 0 10px;
-    margin-bottom: 10px;
 }
 
 /* movement arrows */
@@ -231,9 +275,13 @@ body {
 
 /* use on arrows so that holding touchscreen does not bring up options */
 .unselectable {
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */    
-    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+    -webkit-touch-callout: none;
 }
