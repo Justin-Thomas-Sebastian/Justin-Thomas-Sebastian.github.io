@@ -90,6 +90,7 @@ const isMobile = ('ontouchstart' in document.documentElement && navigator.userAg
 // unless on mobile
 window.onresize = function(){
     if(!isMobile){
-        location.reload(); 
+        window.location.href = window.location.href;
+        console.log("resize");
     }
 }
