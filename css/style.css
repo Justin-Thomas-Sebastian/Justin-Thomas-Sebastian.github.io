@@ -157,18 +157,24 @@ body {
     object-fit: cover;
 }
 
-.project-video {
+.project-video-container {
     display: none;
     background-color: var(--image-backdrop);
     height: 290px;
     width: 350px;
+    overflow: hidden;
 }
 
-.project-entry:hover>.project-video {
-    display: block;
+.project-entry:hover > .project-video-container {
+    display: flex;
 }
 
-.project-entry:hover>.img-container {
+.project-video-container img {
+    object-fit: contain;
+    width: 350px;
+}
+
+.project-entry:hover > .img-container {
     display: none;
 }
 
