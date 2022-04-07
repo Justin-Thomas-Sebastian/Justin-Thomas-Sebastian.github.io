@@ -73,11 +73,12 @@ rightArrow.addEventListener("mouseup", (e) => {
 document.addEventListener("keypress", (e) => {
     const keyCode = e.code;
     if(keyCode === "KeyW"){
-        let feet_hitbox = avatar.position.y + avatar.height + avatar.velocity.y + 40;
+        console.log("jump!");
+        let feet_hitbox = globalAvatar.position.y + globalAvatar.height + globalAvatar.velocity.y + 40;
         if(feet_hitbox <= gameCanvas.height){
-            avatar.velocity.y += GRAVITY;
+            globalAvatar.velocity.y += GRAVITY;
         } else {
-            avatar.velocity.y -= 25;
+            globalAvatar.velocity.y -= 25;
         }   
     }
 });

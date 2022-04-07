@@ -1,11 +1,8 @@
-const avatarImage = new Image();
-avatarImage.src = "assets/avatar-image.png";
-
 class Avatar {
     constructor(image){
         this.position = {
             x: 199,
-            y: 140
+            y: 0
         }
         this.velocity = {
             x: 0,
@@ -13,13 +10,8 @@ class Avatar {
         }
 
         this.image = image;
-        /*
-        hardcoding width and height
-        because for some reason image.width and image.height
-        are always zero on initial page load
-        */
-        this.width = 100;
-        this.height = 348;
+        this.width = image.width;
+        this.height = image.height;
     }
 
     renderAvatar(){

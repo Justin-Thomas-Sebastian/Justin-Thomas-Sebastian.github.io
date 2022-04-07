@@ -3,8 +3,6 @@ const context = gameCanvas.getContext("2d");
 const GRAVITY = 2;
 gameCanvas.width = innerWidth;
 gameCanvas.height = 527;
-const backgroundImage = new Image();
-backgroundImage.src = "assets/marla-bg.png"
 
 class Background {
     constructor(image) {
