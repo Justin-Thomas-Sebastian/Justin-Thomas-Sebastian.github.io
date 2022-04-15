@@ -165,18 +165,18 @@ body {
     overflow: hidden;
 }
 
-.project-entry:hover > .project-video-container {
+/* .project-entry:hover > .project-video-container {
     display: flex;
-}
+} */
 
 .project-video-container img {
     object-fit: contain;
     width: 350px;
 }
 
-.project-entry:hover > .img-container {
+/* .project-entry:hover > .img-container {
     display: none;
-}
+} */
 
 /* forces wrap after 2 project entries */
 /* this should only be used on smaller screens */
